@@ -2,9 +2,9 @@
 
 namespace Xamarin.Prism.Views
 {
-    public partial class MainPage : TabbedPage
+    public partial class LoginView : ContentPage
     {
-        public MainPage()
+        public LoginView()
         {
             InitializeComponent();
         }

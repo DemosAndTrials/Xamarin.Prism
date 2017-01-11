@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Xamarin.Prism.Views.MainPage"
+             x:Class="Xamarin.Prism.Views.TabMainPage"
             xmlns:views="clr-namespace:Xamarin.Prism.Views;assembly=Xamarin.Prism"
             Title="Xamarin.Prism">
 

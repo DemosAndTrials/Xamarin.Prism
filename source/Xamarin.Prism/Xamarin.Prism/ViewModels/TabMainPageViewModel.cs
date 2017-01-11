@@ -2,7 +2,7 @@
 
 namespace Xamarin.Prism.ViewModels
 {
-    public class MainPageViewModel : BindableBase
+    public class TabMainPageViewModel : BindableBase
     {
         private IApplicationCommands _applicationCommand;
         public IApplicationCommands ApplicationCommands
@@ -11,7 +11,7 @@ namespace Xamarin.Prism.ViewModels
             set { SetProperty(ref _applicationCommand, value); }
         }
 
-        public MainPageViewModel(IApplicationCommands applicationCommands)
+        public TabMainPageViewModel(IApplicationCommands applicationCommands)
         {
             ApplicationCommands = applicationCommands;
         }

@@ -1,11 +1,13 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
+using Xamarin.Forms.Xaml;
+using Xamarin.Prism.Services;
 using Xamarin.Prism.ViewModels;
 using Xamarin.Prism.Views;
-using MainPage = Xamarin.Prism.Views.MainPage;
 using TabA = Xamarin.Prism.Views.TabA;
 using TabB = Xamarin.Prism.Views.TabB;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin.Prism
 {
     public partial class App : PrismApplication
@@ -16,18 +18,25 @@ namespace Xamarin.Prism
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/MainPage");
+            NavigationService.NavigateAsync("LoginView");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<TabMainPage>();
             Container.RegisterTypeForNavigation<Forms.NavigationPage>();
             Container.RegisterTypeForNavigation<TabA, TabViewModel>();
             Container.RegisterTypeForNavigation<TabB, TabViewModel>();
             Container.RegisterTypeForNavigation<TabC, TabViewModel>();
 
+            Container.RegisterTypeForNavigation<ShellView>();
+            Container.RegisterTypeForNavigation<MainView>();
+            Container.RegisterTypeForNavigation<LoginView>();
+            Container.RegisterTypeForNavigation<LoginPopupView, LoginPopupViewModel>();
+            Container.RegisterTypeForNavigation<RootView>();
+
             Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
+            Container.RegisterType<IAuthenticationService, AuthenticationService>();
         }
     }
 }

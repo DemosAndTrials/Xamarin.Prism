@@ -1,5 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
+using Xamarin.Prism.UWP.CustomViews;
 
 namespace Xamarin.Prism.UWP
 {
@@ -15,9 +16,12 @@ namespace Xamarin.Prism.UWP
 
     public class UwpInitializer : IPlatformInitializer
     {
+        public static IUnityContainer Container;
+
         public void RegisterTypes(IUnityContainer container)
         {
-
+            Container = container;
+            container.RegisterType<LoginPopupRenderer>();
         }
     }
 

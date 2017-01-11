@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="Xamarin.Prism.Views.ShellView" Title="Shell page">
+
+    <MasterDetailPage.Master>
+
+        <ContentPage Title="Master" BackgroundColor="#e8e8e8">
+            <StackLayout Orientation="Vertical" Padding="10,5">
+                <StackLayout BackgroundColor="#e74c3c" Padding="10">
+                    <Label Text="Some Text title" FontSize="20"
+                           VerticalOptions="CenterAndExpand"
+                           TextColor="White"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+                <Button Text="Homepage"/>
+                <Button Text="MenuItem2"/>
+                <Button Text="MenuItem3"/>
+                <Button Text="MenuItem4"/>
+            </StackLayout>
+        </ContentPage>
+
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+
+        <ContentPage Padding="5, 25">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Detail" HorizontalOptions="Center"/>
+                <Label Text="I'm Detail" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ContentPage>
+
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
