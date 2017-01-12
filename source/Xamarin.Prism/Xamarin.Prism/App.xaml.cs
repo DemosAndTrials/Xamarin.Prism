@@ -1,5 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Prism.Services;
 using Xamarin.Prism.ViewModels;
@@ -32,11 +33,13 @@ namespace Xamarin.Prism
             Container.RegisterTypeForNavigation<ShellView>();
             Container.RegisterTypeForNavigation<MainView>();
             Container.RegisterTypeForNavigation<LoginView>();
-            Container.RegisterTypeForNavigation<LoginPopupView, LoginPopupViewModel>();
+            Container.RegisterTypeForNavigation<LoginPopupView>();
             Container.RegisterTypeForNavigation<RootView>();
 
             Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
             Container.RegisterType<IAuthenticationService, AuthenticationService>();
+
+            Constants.Container = Container;
         }
     }
 }

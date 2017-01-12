@@ -27,8 +27,10 @@ namespace Xamarin.Prism.UWP.CustomViews
             if (e.OldElement != null || Element == null)
             {
                 return;
-            };
-         
+            }
+
+            var t = Constants.Container.Resolve<IAuthenticationService>();//DependencyService.Get<IAuthenticationService>();
+
             var org = "login";//((Element as LoginPopupView)?.BindingContext as LoginPopupViewModel)?.NavigationParameter as string;
             // Initialize the object that communicates with the OAuth service
             // Display the UI
@@ -39,7 +41,7 @@ namespace Xamarin.Prism.UWP.CustomViews
                 await FetchUserInfo(account);
                 //IoC.Get<IAuthenticationService>().SetAccount(account);
                 //IoC.Get<INavigationService>().To<RootViewModel>();
-                //DependencyService.Get<ITextToSpeech>();
+                DependencyService.Get<IAuthenticationService>().SetAccount(account);
                 UwpInitializer.Container.Resolve<IAuthenticationService>().SetAccount(account);
                 //await UwpInitializer.Container.Resolve<INavigationService>().NavigateAsync("LoginView");
             }

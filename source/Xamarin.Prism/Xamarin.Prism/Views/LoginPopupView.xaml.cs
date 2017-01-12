@@ -1,6 +1,8 @@
-﻿namespace Xamarin.Prism.Views
+﻿using Xamarin.Forms;
+
+namespace Xamarin.Prism.Views
 {
-    public partial class LoginPopupView
+    public partial class LoginPopupView : ContentPage
     {
         public LoginPopupView()
         {
