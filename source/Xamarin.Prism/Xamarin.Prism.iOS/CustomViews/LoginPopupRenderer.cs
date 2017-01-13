@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Xamarin.Auth;
@@ -19,6 +16,7 @@ namespace Xamarin.Prism.iOS.CustomViews
     class LoginPopupRenderer : PageRenderer
     {
         private bool _isShown;
+        private LoginPopupViewModel _model;
 
         public override void ViewDidAppear(bool animated)
         {
@@ -27,7 +25,10 @@ namespace Xamarin.Prism.iOS.CustomViews
             if (_isShown) return;
             _isShown = true;
 
-            var org = ((Element as LoginPopupView)?.BindingContext as LoginPopupViewModel)?.NavigationParameter as string;
+            _model = (Element as LoginPopupView)?.BindingContext as LoginPopupViewModel;
+            if (_model == null) return;
+
+            var org = _model.GetOrgType();
             // Initialize the object that communicates with the OAuth service
             var auth = new OAuth2Authenticator(
               Constants.ClientId,
@@ -47,8 +48,7 @@ namespace Xamarin.Prism.iOS.CustomViews
             if (e.IsAuthenticated)
             {
                 await FetchUserInfo(e.Account);
-                //IoC.Get<IAuthenticationService>().SetAccount(e.Account);
-                //IoC.Get<IApplicationNavigationService>().To<RootViewModel>();
+                _model.FinishAuthentication(e.Account);
             }
         }
 

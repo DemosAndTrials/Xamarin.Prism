@@ -1,7 +1,6 @@
 using System;
 using System.Threading.Tasks;
 using Android.App;
-using Microsoft.Practices.Unity;
 using Newtonsoft.Json.Linq;
 using Xamarin.Auth;
 using Xamarin.Forms;
@@ -16,6 +15,8 @@ namespace Xamarin.Prism.Droid.CustomViews
 {
     class LoginPopupRenderer : PageRenderer
     {
+        private LoginPopupViewModel _model;
+
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {
             base.OnElementChanged(e);
@@ -23,9 +24,12 @@ namespace Xamarin.Prism.Droid.CustomViews
             if (e.OldElement != null || Element == null)
             {
                 return;
-            };
+            }
 
-            var org = "login";//((e.NewElement as LoginPopupView)?.BindingContext as LoginPopupViewModel)?.NavigationParameter as string;
+            _model = (Element as LoginPopupView)?.BindingContext as LoginPopupViewModel;
+            if (_model == null) return;
+
+            var org = _model.GetOrgType();
             // Initialize the object that communicates with the OAuth service
             var auth = new OAuth2Authenticator(
                 Constants.ClientId,
@@ -45,8 +49,7 @@ namespace Xamarin.Prism.Droid.CustomViews
             if (e.IsAuthenticated)
             {
                 await FetchUserInfo(e.Account);
-                //IoC.Get<IAuthenticationService>().SetAccount(e.Account);
-                //IoC.Get<INavigationService>().To<RootViewModel>();
+                _model.FinishAuthentication(e.Account);
             }
         }
 

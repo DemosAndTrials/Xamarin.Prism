@@ -1,6 +1,5 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
-using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Prism.Services;
 using Xamarin.Prism.ViewModels;
@@ -25,21 +24,22 @@ namespace Xamarin.Prism
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<TabMainPage>();
-            Container.RegisterTypeForNavigation<Forms.NavigationPage>();
+            //Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<TabA, TabViewModel>();
             Container.RegisterTypeForNavigation<TabB, TabViewModel>();
             Container.RegisterTypeForNavigation<TabC, TabViewModel>();
 
+            Container.RegisterTypeForNavigation<RootView>();
             Container.RegisterTypeForNavigation<ShellView>();
             Container.RegisterTypeForNavigation<MainView>();
             Container.RegisterTypeForNavigation<LoginView>();
             Container.RegisterTypeForNavigation<LoginPopupView>();
-            Container.RegisterTypeForNavigation<RootView>();
+            Container.RegisterTypeForNavigation<ProfileView>();
 
+            // singleton
             Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
-            Container.RegisterType<IAuthenticationService, AuthenticationService>();
+            Container.RegisterType<IAuthenticationService, AuthenticationService>(new ContainerControlledLifetimeManager());
 
-            Constants.Container = Container;
         }
     }
 }

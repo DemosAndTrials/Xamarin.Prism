@@ -16,12 +16,8 @@ namespace Xamarin.Prism.UWP
 
     public class UwpInitializer : IPlatformInitializer
     {
-        public static IUnityContainer Container;
-
         public void RegisterTypes(IUnityContainer container)
         {
-            Container = container;
-            container.RegisterType<LoginPopupRenderer>();
         }
     }
 

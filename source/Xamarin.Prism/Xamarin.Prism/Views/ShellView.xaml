@@ -15,15 +15,17 @@
                            TextColor="White"
                            HorizontalOptions="Center"/>
                 </StackLayout>
-                <Button Text="Homepage"/>
-                <Button Text="MenuItem2"/>
+                <Button Text="Homepage" Command="{Binding NavigationCommand}" CommandParameter="Home"/>
+                <Button Text="Agenda" Command="{Binding NavigationCommand}" CommandParameter="Agenda"/>
                 <Button Text="MenuItem3"/>
                 <Button Text="MenuItem4"/>
+                <Button Text="Profile" Command="{Binding NavigationCommand}" CommandParameter="Profile"/>
+                <Button Text="Settings"/>
             </StackLayout>
         </ContentPage>
 
     </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
+    <!--<MasterDetailPage.Detail>
 
         <ContentPage Padding="5, 25">
             <StackLayout Orientation="Vertical">
@@ -32,6 +34,6 @@
             </StackLayout>
         </ContentPage>
 
-    </MasterDetailPage.Detail>
+    </MasterDetailPage.Detail>-->
     
 </MasterDetailPage>

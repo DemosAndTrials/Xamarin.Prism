@@ -1,12 +1,12 @@
-﻿using Xamarin.Forms;
-
-namespace Xamarin.Prism.Views
+﻿namespace Xamarin.Prism.Views
 {
-    public partial class RootView : ContentPage
+    public partial class RootView
     {
         public RootView()
         {
             InitializeComponent();
         }
+
+        public bool ClearNavigationStackOnNavigation => true;
     }
 }

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Xamarin.Prism.Views.ProfileView">
+
+    <StackLayout HorizontalOptions="CenterAndExpand">
+        <Label Text="User profile" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Label Text="Username:"/>
+        <Label Text="{Binding Username}" TextColor="Fuchsia"/>
+        <Label Text="Email:"/>
+        <Label Text="{Binding EmailAddress}" TextColor="Green"/>
+        <Label Text="{Binding PhotoUrl}" TextColor="Blue"/>
+    </StackLayout>
+
+</ContentPage>

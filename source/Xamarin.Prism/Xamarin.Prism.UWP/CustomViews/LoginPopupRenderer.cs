@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Windows.Security.Authentication.Web;
-using Microsoft.Practices.Unity;
 using Newtonsoft.Json.Linq;
-using Prism.Navigation;
 using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.UWP;
@@ -29,9 +25,10 @@ namespace Xamarin.Prism.UWP.CustomViews
                 return;
             }
 
-            var t = Constants.Container.Resolve<IAuthenticationService>();//DependencyService.Get<IAuthenticationService>();
+            var model = (Element as LoginPopupView)?.BindingContext as LoginPopupViewModel;
+            if (model == null) return;
 
-            var org = "login";//((Element as LoginPopupView)?.BindingContext as LoginPopupViewModel)?.NavigationParameter as string;
+            var org = model.GetOrgType();
             // Initialize the object that communicates with the OAuth service
             // Display the UI
             var code = await AuthenticateUsingWebAuthenticationBroker(org);
@@ -39,11 +36,7 @@ namespace Xamarin.Prism.UWP.CustomViews
             {
                 var account = ConvertCodeToAccount(code);
                 await FetchUserInfo(account);
-                //IoC.Get<IAuthenticationService>().SetAccount(account);
-                //IoC.Get<INavigationService>().To<RootViewModel>();
-                DependencyService.Get<IAuthenticationService>().SetAccount(account);
-                UwpInitializer.Container.Resolve<IAuthenticationService>().SetAccount(account);
-                //await UwpInitializer.Container.Resolve<INavigationService>().NavigateAsync("LoginView");
+                model.FinishAuthentication(account);
             }
         }
 

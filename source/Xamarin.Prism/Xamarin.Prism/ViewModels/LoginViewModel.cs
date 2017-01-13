@@ -1,9 +1,5 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using Prism.Navigation;
 using Xamarin.Prism.Services;
 
@@ -25,8 +21,9 @@ namespace Xamarin.Prism.ViewModels
 
         private void Login(string org)
         {
-            var p = new NavigationParameters { { "orgType", org } };
-            _navigationService.NavigateAsync("LoginPopupView", p);
+            // start login process
+            _authentication.OrgType = org;
+            _navigationService.NavigateAsync("LoginPopupView");
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -35,29 +32,10 @@ namespace Xamarin.Prism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            if (NeedsLogin())
+            if (_authentication.UserAccount != null)
             {
-                // start login process
+                _navigationService.NavigateAsync("ShellView/RootView/MainView", animated: false);
             }
-            else
-            {
-                _navigationService.NavigateAsync("ShellView");
-            }
-        }
-
-        private bool NeedsLogin()
-        {
-            try
-            {
-                // check if user authenticated here
-                return _authentication.UserAccount == null;
-            }
-            catch (Exception e)
-            {
-                // needs logger
-                Debug.WriteLine(e);
-            }
-            return true;
         }
     }
 }
