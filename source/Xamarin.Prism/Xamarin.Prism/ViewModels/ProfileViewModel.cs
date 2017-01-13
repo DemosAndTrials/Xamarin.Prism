@@ -1,10 +1,10 @@
-﻿using Prism.Mvvm;
-using Prism.Navigation;
+﻿using Prism.Navigation;
 using Xamarin.Prism.Services;
+using Xamarin.Prism.ViewModels.Abstract;
 
 namespace Xamarin.Prism.ViewModels
 {
-    public class ProfileViewModel : BindableBase, INavigationAware
+    public class ProfileViewModel : ViewModelBase
     {
         private readonly IAuthenticationService _authentication;
 
@@ -27,12 +27,7 @@ namespace Xamarin.Prism.ViewModels
             _authentication = authentication;
         }
 
-
-        public void OnNavigatedFrom(NavigationParameters parameters)
-        {
-        }
-
-        public void OnNavigatedTo(NavigationParameters parameters)
+        public override void OnNavigatedTo(NavigationParameters parameters)
         {
             if (_authentication.UserAccount != null)
             {

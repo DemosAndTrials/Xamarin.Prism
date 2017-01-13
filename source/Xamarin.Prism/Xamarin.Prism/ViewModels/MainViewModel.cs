@@ -1,8 +1,10 @@
 ﻿using Prism.Mvvm;
+using Prism.Navigation;
+using Xamarin.Prism.ViewModels.Abstract;
 
 namespace Xamarin.Prism.ViewModels
 {
-    public class MainViewModel : BindableBase
+    public class MainViewModel : ViewModelBase
     {
         private string _title = "Mainpage wellcome";
         public string Title
@@ -11,7 +13,7 @@ namespace Xamarin.Prism.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainViewModel()
+        public override void OnNavigatingTo(NavigationParameters parameters)
         {
 
         }

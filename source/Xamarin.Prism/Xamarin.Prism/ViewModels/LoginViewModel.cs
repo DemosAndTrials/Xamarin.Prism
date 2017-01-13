@@ -1,11 +1,11 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
 using Xamarin.Prism.Services;
+using Xamarin.Prism.ViewModels.Abstract;
 
 namespace Xamarin.Prism.ViewModels
 {
-    public class LoginViewModel : BindableBase, INavigationAware
+    public class LoginViewModel : ViewModelBase
     {
         readonly INavigationService _navigationService;
         private readonly IAuthenticationService _authentication;
@@ -26,15 +26,15 @@ namespace Xamarin.Prism.ViewModels
             _navigationService.NavigateAsync("LoginPopupView");
         }
 
-        public void OnNavigatedFrom(NavigationParameters parameters)
+        public override void OnNavigatedFrom(NavigationParameters parameters)
         {
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
+        public override void OnNavigatedTo(NavigationParameters parameters)
         {
             if (_authentication.UserAccount != null)
             {
-                _navigationService.NavigateAsync("ShellView/RootView/MainView", animated: false);
+                _navigationService.NavigateAsync("ShellView/DetailView/MainView", animated: false);
             }
         }
     }

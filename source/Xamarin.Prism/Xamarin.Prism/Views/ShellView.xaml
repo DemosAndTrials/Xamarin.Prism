@@ -3,37 +3,27 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                   prism:ViewModelLocator.AutowireViewModel="True"
-                  x:Class="Xamarin.Prism.Views.ShellView" Title="Shell page">
+                  x:Class="Xamarin.Prism.Views.ShellView">
 
     <MasterDetailPage.Master>
 
         <ContentPage Title="Master" BackgroundColor="#e8e8e8">
             <StackLayout Orientation="Vertical" Padding="10,5">
-                <StackLayout BackgroundColor="#e74c3c" Padding="10">
+                <StackLayout BackgroundColor="#e74c3c" Padding="5">
                     <Label Text="Some Text title" FontSize="20"
                            VerticalOptions="CenterAndExpand"
                            TextColor="White"
                            HorizontalOptions="Center"/>
                 </StackLayout>
-                <Button Text="Homepage" Command="{Binding NavigationCommand}" CommandParameter="Home"/>
-                <Button Text="Agenda" Command="{Binding NavigationCommand}" CommandParameter="Agenda"/>
-                <Button Text="MenuItem3"/>
-                <Button Text="MenuItem4"/>
-                <Button Text="Profile" Command="{Binding NavigationCommand}" CommandParameter="Profile"/>
-                <Button Text="Settings"/>
+                <Button Text="Homepage" Command="{Binding NavigateCommand}" CommandParameter="DetailView/MainView"/>
+                <Button Text="Agenda" Command="{Binding NavigateCommand}" CommandParameter="DetailView/LoginView"/>
+                <Button Text="Tab page" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabMainPage"/>
+                <Button Text="MenuItem4" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabB"/>
+                <Button Text="Profile" Command="{Binding NavigateCommand}" CommandParameter="DetailView/ProfileView"/>
+                <Button Text="Settings" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabC"/>
             </StackLayout>
         </ContentPage>
 
     </MasterDetailPage.Master>
-    <!--<MasterDetailPage.Detail>
 
-        <ContentPage Padding="5, 25">
-            <StackLayout Orientation="Vertical">
-                <Label Text="Detail" HorizontalOptions="Center"/>
-                <Label Text="I'm Detail" HorizontalOptions="Center"/>
-            </StackLayout>
-        </ContentPage>
-
-    </MasterDetailPage.Detail>-->
-    
 </MasterDetailPage>

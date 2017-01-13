@@ -26,7 +26,7 @@ namespace Xamarin.Prism.ViewModels
             // store user account
             _authentication.SetAccount(account);
             // navigate to main page
-            _navigationService.NavigateAsync("ShellView");
+            _navigationService.NavigateAsync("ShellView/DetailView/MainView", animated: false);
         }
     }
 }
