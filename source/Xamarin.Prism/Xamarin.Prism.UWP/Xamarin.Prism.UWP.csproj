@@ -95,10 +95,12 @@
     <None Include="Xamarin.Prism.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountStoreUWP.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomViews\LoginPopupRenderer.cs" />
+    <Compile Include="DataProtectionExtensions.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

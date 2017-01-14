@@ -1,5 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
+using Xamarin.Prism.Services;
 using Xamarin.Prism.UWP.CustomViews;
 
 namespace Xamarin.Prism.UWP
@@ -18,6 +19,7 @@ namespace Xamarin.Prism.UWP
     {
         public void RegisterTypes(IUnityContainer container)
         {
+            AccountStoreFactory.Create = () => new AccountStoreUWP();
         }
     }
 

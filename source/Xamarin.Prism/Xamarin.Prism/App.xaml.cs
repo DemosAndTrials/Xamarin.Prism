@@ -43,8 +43,6 @@ namespace Xamarin.Prism
             // singleton
             Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
             Container.RegisterType<IAuthenticationService, AuthenticationService>(new ContainerControlledLifetimeManager());
-
-            Container.RegisterTypeForNavigation<DetailView>();
         }
     }
 }

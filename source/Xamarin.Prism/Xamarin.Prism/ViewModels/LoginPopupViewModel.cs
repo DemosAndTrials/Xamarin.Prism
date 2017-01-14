@@ -21,12 +21,12 @@ namespace Xamarin.Prism.ViewModels
             return _authentication.OrgType;
         }
 
-        public void FinishAuthentication(Account account)
+        public async void FinishAuthentication(Account account)
         {
             // store user account
-            _authentication.SetAccount(account);
+            await _authentication.SetAccount(account);
             // navigate to main page
-            _navigationService.NavigateAsync("ShellView/DetailView/MainView", animated: false);
+            await _navigationService.NavigateAsync("ShellView/DetailView/MainView", animated: false);
         }
     }
 }

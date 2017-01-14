@@ -1,4 +1,5 @@
-﻿using Xamarin.Auth;
+﻿using System.Threading.Tasks;
+using Xamarin.Auth;
 
 namespace Xamarin.Prism.Services
 {
@@ -6,6 +7,7 @@ namespace Xamarin.Prism.Services
     {
         string OrgType { get; set; }
         Account UserAccount { get; }
-        void SetAccount(Account account);
+        Task SetAccount(Account account);
+        Task<bool> IsAuthenticated();
     }
 }
