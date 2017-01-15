@@ -60,9 +60,11 @@ namespace Xamarin.Prism.iOS.CustomViews
             {
                 var userJson = response.GetResponseText();
                 var user = JObject.Parse(userJson);
-                account.Username = (string)user[Constants.UsernameAccountProperty];
-                account.Properties[Constants.EmailAccountProperty] = (string)user[Constants.EmailAccountProperty];
-                account.Properties[Constants.PhotoAccountProperty] = (string)user[Constants.PhotoAccountProperty]["picture"];
+                account.Username = (string)user["username"];
+                account.Properties["display_name"] = (string)user["display_name"];
+                account.Properties["email"] = (string)user["email"];
+                account.Properties["photo_picture"] = (string)user["photos"]["picture"];
+                account.Properties["photo_thumbnail"] = (string)user["photos"]["thumbnail"];
             }
         }
     }

@@ -32,7 +32,7 @@ namespace Xamarin.Prism.ViewModels
 
         public override async void OnNavigatedTo(NavigationParameters parameters)
         {
-            if (await _authentication.IsAuthenticated())
+            if (await _authentication.IsAuthenticatedAsync())
             {
                 await _navigationService.NavigateAsync("ShellView/DetailView/MainView", animated: false);
             }

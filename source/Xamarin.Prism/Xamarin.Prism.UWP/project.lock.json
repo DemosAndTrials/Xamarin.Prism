@@ -2156,6 +2156,19 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Auth/1.3.1.1": {
         "dependencies": {
           "PCLCrypto": "(, )"
@@ -4414,6 +4427,19 @@
         },
         "runtime": {
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Auth/1.3.1.1": {
@@ -6715,6 +6741,19 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Auth/1.3.1.1": {
         "dependencies": {
           "PCLCrypto": "(, )"
@@ -8982,6 +9021,19 @@
         },
         "runtime": {
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Auth/1.3.1.1": {
@@ -11292,6 +11344,19 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Auth/1.3.1.1": {
         "dependencies": {
           "PCLCrypto": "(, )"
@@ -13559,6 +13624,19 @@
         },
         "runtime": {
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Auth/1.3.1.1": {
@@ -15867,6 +15945,19 @@
         },
         "runtime": {
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Auth/1.3.1.1": {
@@ -22314,6 +22405,52 @@
         "tools/uninstall_snippets.cmd"
       ]
     },
+    "Xam.Plugins.Forms.ImageCircle/1.8.1": {
+      "sha512": "gU4mTnwB3TCBw3eLP0MNpLUKNsWxYJe28NbpU/CY6YQaGtrIOZ5XRrvjz30w6AKhXeIA+DC6klUY1YqfCNWgPg==",
+      "type": "package",
+      "path": "Xam.Plugins.Forms.ImageCircle/1.8.1",
+      "files": [
+        "Xam.Plugins.Forms.ImageCircle.1.8.1.nupkg.sha512",
+        "Xam.Plugins.Forms.ImageCircle.nuspec",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.dll",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.pdb",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.xml",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.pdb",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.xml",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.dll",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.xml",
+        "lib/portable-net45+wp80+win8+wpa81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/portable-net45+wp80+win8+wpa81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/portable-net45+wp80+win8+wpa81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.dll",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.pdb",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.xml",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.dll",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.pdb",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.xml",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.dll",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.pdb",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.xml"
+      ]
+    },
     "Xamarin.Auth/1.3.1.1": {
       "sha512": "uDiDxg+iFioMYBhyc1Z02aTvUTrxu3QflndiyGF6yZ2ohte4Zf0u4v2d9jfWqsyRFlPE/NkmFItHdJR1JstVbg==",
       "type": "package",
@@ -22507,6 +22644,7 @@
       "Prism.Unity.Forms >= 6.2.0",
       "Unity >= 4.0.1",
       "Validation >= 2.3.7",
+      "Xam.Plugins.Forms.ImageCircle >= 1.8.1",
       "Xamarin.Auth >= 1.3.1.1",
       "Xamarin.Forms >= 2.3.3.180"
     ],

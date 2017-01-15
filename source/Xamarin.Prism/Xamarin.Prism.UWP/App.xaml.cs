@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Reflection;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using ImageCircle.Forms.Plugin.UWP;
 
 namespace Xamarin.Prism.UWP
 {
@@ -47,8 +49,12 @@ namespace Xamarin.Prism.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
-
-                Xamarin.Forms.Forms.Init(e);
+                var rendererAssemblies = new[]
+                {
+                    typeof(ImageCircleRenderer).GetTypeInfo().Assembly
+                };
+                Xamarin.Forms.Forms.Init(e, rendererAssemblies);
+                ImageCircleRenderer.Init();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

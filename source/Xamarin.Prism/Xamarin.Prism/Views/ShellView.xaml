@@ -2,18 +2,21 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="Xamarin.Prism.Views.ShellView">
 
     <MasterDetailPage.Master>
 
         <ContentPage Title="Master" BackgroundColor="#e8e8e8">
-            <StackLayout Orientation="Vertical" Padding="10,5">
-                <StackLayout BackgroundColor="#e74c3c" Padding="5">
-                    <Label Text="Some Text title" FontSize="20"
-                           VerticalOptions="CenterAndExpand"
-                           TextColor="White"
-                           HorizontalOptions="Center"/>
+            <StackLayout Orientation="Vertical" Padding="4">
+                <!--user info-->
+                <StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="0,5">
+                    <plugin:CircleImage Source="{Binding PhotoUrl}" Margin="8,0" WidthRequest="35" HeightRequest="35" Aspect="AspectFill"/>
+                    <StackLayout Spacing="0">
+                        <Label Text="{Binding UserDisplayName}"/>
+                        <Label Text="{Binding InstanceUrl}" FontSize="11"/>
+                    </StackLayout>
                 </StackLayout>
                 <Button Text="Homepage" Command="{Binding NavigateCommand}" CommandParameter="DetailView/MainView"/>
                 <Button Text="Agenda" Command="{Binding NavigateCommand}" CommandParameter="DetailView/LoginView"/>

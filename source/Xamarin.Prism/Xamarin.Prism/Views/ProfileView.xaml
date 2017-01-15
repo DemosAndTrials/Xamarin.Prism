@@ -2,17 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              mvvm:ViewModelLocator.AutowireViewModel="True"
              x:Class="Xamarin.Prism.Views.ProfileView"
-             Title="Profile">
+             Title="User profile">
 
-    <StackLayout HorizontalOptions="CenterAndExpand">
-        <Label Text="User profile" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-        <Label Text="Username:"/>
+    <StackLayout HorizontalOptions="CenterAndExpand" Padding="12" Spacing="5">
+        <Label Text="Name:" FontAttributes="Bold"/>
+        <Label Text="{Binding DisplayName}" TextColor="Fuchsia"/>
+        <Label Text="Username:" FontAttributes="Bold"/>
         <Label Text="{Binding Username}" TextColor="Fuchsia"/>
-        <Label Text="Email:"/>
+        <Label Text="Email:" FontAttributes="Bold"/>
         <Label Text="{Binding EmailAddress}" TextColor="Green"/>
-        <Label Text="{Binding PhotoUrl}" TextColor="Blue"/>
+        <Label Text="Instance:" FontAttributes="Bold"/>
+        <Label Text="{Binding InstanceUrl}" TextColor="Green"/>
+        <Label Text="Photo:" FontAttributes="Bold"/>
+        <plugin:CircleImage Source="{Binding PhotoUrl}" Aspect="AspectFit" WidthRequest="125" HeightRequest="125"/>
+        <Button Text="Logout" Command="{Binding LogoutCommand}" CommandParameter="login" Margin="0,15"/>
     </StackLayout>
 
 </ContentPage>

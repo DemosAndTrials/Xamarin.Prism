@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using ImageCircle.Forms.Plugin.iOS;
 using Microsoft.Practices.Unity;
 using Prism.Unity;
 using UIKit;
@@ -21,6 +22,7 @@ namespace Xamarin.Prism.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            ImageCircleRenderer.Init();
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

@@ -3,6 +3,7 @@
     public static class Constants
     {
         //public static IUnityContainer Container { get; set; }
+        public const string AppName = "XamarinPrism";
 
         // https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/code_sample_auth_oauth.htm 
 
@@ -13,9 +14,5 @@
         public const string AuthorizeUrl = "https://{0}.salesforce.com/services/oauth2/authorize";
         public const string AccessTokenUrl = "https://{0}.salesforce.com/services/oauth2/token";
         public const string UserInfoUrl = "https://{0}.salesforce.com/services/oauth2/userinfo";
-
-        public const string UsernameAccountProperty = "username";
-        public const string EmailAccountProperty = "email";
-        public const string PhotoAccountProperty = "photos";
     }
 }

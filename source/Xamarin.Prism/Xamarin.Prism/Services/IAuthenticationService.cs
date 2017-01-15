@@ -7,7 +7,8 @@ namespace Xamarin.Prism.Services
     {
         string OrgType { get; set; }
         Account UserAccount { get; }
-        Task SetAccount(Account account);
-        Task<bool> IsAuthenticated();
+        Task SetAccountAsync(Account account);
+        Task<bool> IsAuthenticatedAsync();
+        Task LogoutAsync();
     }
 }
