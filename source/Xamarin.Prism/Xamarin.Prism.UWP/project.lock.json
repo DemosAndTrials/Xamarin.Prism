@@ -2156,6 +2156,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -2192,6 +2202,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     },
@@ -4429,6 +4465,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -4465,6 +4511,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     },
@@ -6741,6 +6813,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -6777,6 +6859,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     },
@@ -9023,6 +9131,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -9059,6 +9177,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     },
@@ -11344,6 +11488,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -11380,6 +11534,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     },
@@ -13626,6 +13806,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -13662,6 +13852,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     },
@@ -15947,6 +16163,16 @@
           "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/1.8.1": {
         "dependencies": {
           "Xamarin.Forms": "2.3.2.127"
@@ -15983,6 +16209,32 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile/2.1.47": {
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Core.dll": {},
+          "lib/UAP10/ZXingNetMobile.dll": {},
+          "lib/UAP10/zxing.portable.dll": {}
+        }
+      },
+      "ZXing.Net.Mobile.Forms/2.1.47": {
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6490",
+          "ZXing.Net.Mobile": "2.1.47"
+        },
+        "compile": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll": {},
+          "lib/UAP10/ZXing.Net.Mobile.Forms.dll": {}
         }
       }
     }
@@ -22405,6 +22657,66 @@
         "tools/uninstall_snippets.cmd"
       ]
     },
+    "Xam.Plugin.Media/2.6.2": {
+      "sha512": "WN5n0205WfjS1zUsLoyfKT4nkTlUtFSvpJ0GvuQ4v3A7AJeXLASAQOB7iND8aVLFI/fg7qHZ6qxzLroAhJaa7g==",
+      "type": "package",
+      "path": "Xam.Plugin.Media/2.6.2",
+      "files": [
+        "Xam.Plugin.Media.2.6.2.nupkg.sha512",
+        "Xam.Plugin.Media.nuspec",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Media.dll",
+        "lib/MonoAndroid10/Plugin.Media.pdb",
+        "lib/MonoAndroid10/Plugin.Media.xml",
+        "lib/UAP10/Plugin.Media.Abstractions.dll",
+        "lib/UAP10/Plugin.Media.Abstractions.pdb",
+        "lib/UAP10/Plugin.Media.Abstractions.xml",
+        "lib/UAP10/Plugin.Media.dll",
+        "lib/UAP10/Plugin.Media.pdb",
+        "lib/UAP10/Plugin.Media.xml",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Media.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.xml",
+        "lib/net45/Plugin.Media.Abstractions.dll",
+        "lib/net45/Plugin.Media.Abstractions.xml",
+        "lib/net45/Plugin.Media.dll",
+        "lib/net45/Plugin.Media.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.Abstractions.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.Abstractions.pdb",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.Abstractions.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.pdb",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.xml",
+        "lib/win8/Plugin.Media.Abstractions.dll",
+        "lib/win8/Plugin.Media.Abstractions.pdb",
+        "lib/win8/Plugin.Media.Abstractions.xml",
+        "lib/win8/Plugin.Media.dll",
+        "lib/win8/Plugin.Media.pdb",
+        "lib/win8/Plugin.Media.xml",
+        "lib/wp8/Plugin.Media.Abstractions.dll",
+        "lib/wp8/Plugin.Media.Abstractions.pdb",
+        "lib/wp8/Plugin.Media.Abstractions.xml",
+        "lib/wp8/Plugin.Media.dll",
+        "lib/wp8/Plugin.Media.pdb",
+        "lib/wp8/Plugin.Media.xml",
+        "lib/wpa81/Plugin.Media.Abstractions.dll",
+        "lib/wpa81/Plugin.Media.Abstractions.pdb",
+        "lib/wpa81/Plugin.Media.Abstractions.xml",
+        "lib/wpa81/Plugin.Media.dll",
+        "lib/wpa81/Plugin.Media.pdb",
+        "lib/wpa81/Plugin.Media.pri",
+        "lib/wpa81/Plugin.Media.xml",
+        "lib/wpa81/Plugin.Media/CameraCaptureUI.xaml",
+        "lib/wpa81/Plugin.Media/CameraCaptureUI.xbf",
+        "lib/wpa81/Plugin.Media/CameraCaptureUIPage.xaml",
+        "lib/wpa81/Plugin.Media/CameraCaptureUIPage.xbf",
+        "lib/wpa81/Plugin.Media/Plugin.Media.xr.xml",
+        "readme.txt"
+      ]
+    },
     "Xam.Plugins.Forms.ImageCircle/1.8.1": {
       "sha512": "gU4mTnwB3TCBw3eLP0MNpLUKNsWxYJe28NbpU/CY6YQaGtrIOZ5XRrvjz30w6AKhXeIA+DC6klUY1YqfCNWgPg==",
       "type": "package",
@@ -22629,6 +22941,51 @@
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml"
       ]
+    },
+    "ZXing.Net.Mobile/2.1.47": {
+      "sha512": "K+7OebNXS7kv6J2edXOWf0B7cu8vE6j6d7DOcbQOHR//YJXFifVwN1m7BfycBkrwO9WClKM2ZZQNTlC6GeOOQA==",
+      "type": "package",
+      "path": "ZXing.Net.Mobile/2.1.47",
+      "files": [
+        "ZXing.Net.Mobile.2.1.47.nupkg.sha512",
+        "ZXing.Net.Mobile.nuspec",
+        "lib/MonoAndroid403/ZXing.Net.Mobile.Core.dll",
+        "lib/MonoAndroid403/ZXingNetMobile.dll",
+        "lib/MonoAndroid403/zxing.portable.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Core.dll",
+        "lib/UAP10/ZXingNetMobile.dll",
+        "lib/UAP10/ZXingNetMobile.pri",
+        "lib/UAP10/ZXingNetMobile/ZXingNetMobile.xr.xml",
+        "lib/UAP10/zxing.portable.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll",
+        "lib/Xamarin.iOS10/ZXingNetMobile.dll",
+        "lib/Xamarin.iOS10/zxing.portable.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/ZXing.Net.Mobile.Core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/ZXingNetMobile.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/zxing.portable.dll",
+        "lib/wp8/ZXing.Net.Mobile.Core.dll",
+        "lib/wp8/ZXingNetMobile.dll",
+        "lib/wp8/zxing.portable.dll"
+      ]
+    },
+    "ZXing.Net.Mobile.Forms/2.1.47": {
+      "sha512": "Wchw0zTn6lEKVFf6bPxCIqHGAVvrknBwiN6A28behClv8M3EwYrFBLsGvRfmPolhivLYl05iD+RoULvRvYCjAw==",
+      "type": "package",
+      "path": "ZXing.Net.Mobile.Forms/2.1.47",
+      "files": [
+        "ZXing.Net.Mobile.Forms.2.1.47.nupkg.sha512",
+        "ZXing.Net.Mobile.Forms.nuspec",
+        "lib/MonoAndroid403/ZXing.Net.Mobile.Forms.Android.dll",
+        "lib/MonoAndroid403/ZXing.Net.Mobile.Forms.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.dll",
+        "lib/UAP10/ZXing.Net.Mobile.Forms.WindowsUniversal.pri",
+        "lib/UAP10/ZXing.Net.Mobile.Forms.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll",
+        "lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/ZXing.Net.Mobile.Forms.dll",
+        "lib/wp8/ZXing.Net.Mobile.Forms.WindowsPhone.dll",
+        "lib/wp8/ZXing.Net.Mobile.Forms.dll"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -22644,9 +23001,11 @@
       "Prism.Unity.Forms >= 6.2.0",
       "Unity >= 4.0.1",
       "Validation >= 2.3.7",
+      "Xam.Plugin.Media >= 2.6.2",
       "Xam.Plugins.Forms.ImageCircle >= 1.8.1",
       "Xamarin.Auth >= 1.3.1.1",
-      "Xamarin.Forms >= 2.3.3.180"
+      "Xamarin.Forms >= 2.3.3.180",
+      "ZXing.Net.Mobile.Forms >= 2.1.47"
     ],
     "UAP,Version=v10.0": []
   }

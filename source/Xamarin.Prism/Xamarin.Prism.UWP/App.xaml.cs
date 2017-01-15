@@ -55,6 +55,7 @@ namespace Xamarin.Prism.UWP
                 };
                 Xamarin.Forms.Forms.Init(e, rendererAssemblies);
                 ImageCircleRenderer.Init();
+                ZXing.Net.Mobile.Forms.WindowsUniversal.ZXingScannerViewRenderer.Init();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

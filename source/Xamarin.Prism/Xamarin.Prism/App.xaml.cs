@@ -39,10 +39,12 @@ namespace Xamarin.Prism
             Container.RegisterTypeForNavigation<LoginView>();
             Container.RegisterTypeForNavigation<LoginPopupView>();
             Container.RegisterTypeForNavigation<ProfileView>();
+            Container.RegisterTypeForNavigation<CameraView>();
 
             // singleton
             Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
             Container.RegisterType<IAuthenticationService, AuthenticationService>(new ContainerControlledLifetimeManager());
+            Container.RegisterTypeForNavigation<CustomScanView>();
         }
     }
 }

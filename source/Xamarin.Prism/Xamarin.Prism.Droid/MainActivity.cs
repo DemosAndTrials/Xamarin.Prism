@@ -3,6 +3,7 @@ using Android.Content.PM;
 using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
 using Microsoft.Practices.Unity;
+using Plugin.Permissions;
 using Prism.Unity;
 
 namespace Xamarin.Prism.Droid
@@ -19,7 +20,14 @@ namespace Xamarin.Prism.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             ImageCircleRenderer.Init();
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
             LoadApplication(new App(new AndroidInitializer()));
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            global::ZXing.Net.Mobile.Forms.Android.PermissionsHandler.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 
