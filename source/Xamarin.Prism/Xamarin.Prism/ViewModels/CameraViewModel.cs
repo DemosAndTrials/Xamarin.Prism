@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using Plugin.Media;
+﻿using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Prism.Commands;
 using Prism.Mvvm;

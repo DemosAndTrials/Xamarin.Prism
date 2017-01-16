@@ -20,7 +20,7 @@
                 </StackLayout>
                 <Button Text="Homepage" Command="{Binding NavigateCommand}" CommandParameter="DetailView/MainView"/>
                 <Button Text="Camera" Command="{Binding NavigateCommand}" CommandParameter="DetailView/CameraView"/>
-                <Button Text="Scanner" Command="{Binding NavigateCommand}" CommandParameter="DetailView/CustomScanView"/>
+                <Button Text="Scanner" Command="{Binding NavigateCommand}" CommandParameter="DetailView/BarcodeScanView"/>
                 <Button Text="Agenda" Command="{Binding NavigateCommand}" CommandParameter="DetailView/LoginView"/>
                 <Button Text="Tab page" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabMainPage"/>
                 <Button Text="MenuItem4" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabB"/>

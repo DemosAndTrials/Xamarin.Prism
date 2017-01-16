@@ -1,8 +1,6 @@
-﻿using Xamarin.Forms;
-
-namespace Xamarin.Prism.Views
+﻿namespace Xamarin.Prism.Views
 {
-    public partial class TabMainPage : TabbedPage
+    public partial class TabMainPage
     {
         public TabMainPage()
         {

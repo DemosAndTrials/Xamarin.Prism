@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Xamarin.Prism.Views.MainView" Title="Main">
-    <Label Text="{Binding Title}"/>
+             x:Class="Xamarin.Prism.Views.MainView" Title="Mainpage">
+    <Label Text="{Binding Title}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="15"/>
 </ContentPage>

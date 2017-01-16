@@ -1,13 +1,11 @@
-﻿using Xamarin.Forms;
-
-namespace Xamarin.Prism.Views
+﻿namespace Xamarin.Prism.Views
 {
-    public partial class CustomScanView : ContentPage
+    public partial class BarcodeScanView
     {
         //ZXingScannerView _zxing;
         //ZXingDefaultOverlay _overlay;
 
-        public CustomScanView()
+        public BarcodeScanView()
         {
             InitializeComponent();
 

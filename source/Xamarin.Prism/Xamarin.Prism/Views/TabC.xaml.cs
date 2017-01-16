@@ -1,8 +1,6 @@
-﻿using Xamarin.Forms;
-
-namespace Xamarin.Prism.Views
+﻿namespace Xamarin.Prism.Views
 {
-    public partial class TabC : ContentPage
+    public partial class TabC
     {
         public TabC()
         {

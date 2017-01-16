@@ -4,7 +4,7 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              xmlns:forms="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Xamarin.Prism.Views.CustomScanView"
+             x:Class="Xamarin.Prism.Views.BarcodeScanView"
              >
 
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">

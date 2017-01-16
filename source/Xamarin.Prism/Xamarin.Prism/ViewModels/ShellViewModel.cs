@@ -1,12 +1,13 @@
 ﻿using System;
 using Prism.Commands;
 using Prism.Navigation;
+using Xamarin.Forms;
 using Xamarin.Prism.Services;
 using Xamarin.Prism.ViewModels.Abstract;
 
 namespace Xamarin.Prism.ViewModels
 {
-    public class ShellViewModel : ViewModelBase
+    public class ShellViewModel : ViewModelBase, IMasterDetailPageOptions
     {
         private readonly INavigationService _navigationService;
         readonly IAuthenticationService _authentication;
@@ -57,6 +58,11 @@ namespace Xamarin.Prism.ViewModels
                 InstanceUrl = _authentication.UserAccount.Properties["instance_url"];
                 _alreadyLoaded = true;
             }
+        }
+
+        public bool IsPresentedAfterNavigation
+        {
+            get { return Device.Idiom == TargetIdiom.Desktop; }
         }
     }
 }

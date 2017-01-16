@@ -1,12 +1,11 @@
 ﻿using Prism.Navigation;
-using Xamarin.Forms;
 
 namespace Xamarin.Prism.Views
 {
     /// <summary>
     /// Used as base navigation page for MasterDetail
     /// </summary>
-    public partial class DetailView : NavigationPage, INavigationPageOptions
+    public partial class DetailView : INavigationPageOptions
     {
         public DetailView()
         {

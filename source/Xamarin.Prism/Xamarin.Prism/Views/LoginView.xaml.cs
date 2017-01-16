@@ -1,9 +1,6 @@
-﻿using Prism.Navigation;
-using Xamarin.Forms;
-
-namespace Xamarin.Prism.Views
+﻿namespace Xamarin.Prism.Views
 {
-    public partial class LoginView : ContentPage
+    public partial class LoginView
     {
         public LoginView()
         {

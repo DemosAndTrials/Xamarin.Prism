@@ -1,18 +1,10 @@
-﻿using Prism.Navigation;
-using Xamarin.Forms;
-
-namespace Xamarin.Prism.Views
+﻿namespace Xamarin.Prism.Views
 {
-    public partial class ShellView : MasterDetailPage, IMasterDetailPageOptions
+    public partial class ShellView
     {
         public ShellView()
         {
             InitializeComponent();
-        }
-
-        public bool IsPresentedAfterNavigation
-        {
-            get { return Device.Idiom != TargetIdiom.Phone; }
         }
     }
 }

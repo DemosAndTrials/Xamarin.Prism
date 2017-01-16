@@ -43,7 +43,7 @@
     <Compile Include="Services\IAuthenticationService.cs" />
     <Compile Include="ViewModels\Abstract\ViewModelBase.cs" />
     <Compile Include="ViewModels\CameraViewModel.cs" />
-    <Compile Include="ViewModels\CustomScanViewModel.cs" />
+    <Compile Include="ViewModels\BarcodeScanViewModel.cs" />
     <Compile Include="ViewModels\LoginPopupViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -54,8 +54,8 @@
     <Compile Include="Views\CameraView.xaml.cs">
       <DependentUpon>CameraView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CustomScanView.xaml.cs">
-      <DependentUpon>CustomScanView.xaml</DependentUpon>
+    <Compile Include="Views\BarcodeScanView.xaml.cs">
+      <DependentUpon>BarcodeScanView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginPopupView.xaml.cs">
       <DependentUpon>LoginPopupView.xaml</DependentUpon>
@@ -246,7 +246,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\CustomScanView.xaml">
+    <EmbeddedResource Include="Views\BarcodeScanView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

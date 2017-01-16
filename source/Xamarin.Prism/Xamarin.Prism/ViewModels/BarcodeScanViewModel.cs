@@ -7,7 +7,7 @@ using ZXing;
 
 namespace Xamarin.Prism.ViewModels
 {
-    public class CustomScanViewModel : ViewModelBase
+    public class BarcodeScanViewModel : ViewModelBase
     {
         readonly INavigationService _navigationService;
         readonly IPageDialogService _pageDialogService;
@@ -35,7 +35,7 @@ namespace Xamarin.Prism.ViewModels
             set { SetProperty(ref _isTorchOn, value); }
         }
 
-        public CustomScanViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+        public BarcodeScanViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         {
             _navigationService = navigationService;
             _pageDialogService = pageDialogService;
