@@ -1,7 +1,9 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
 using Xamarin.Forms.Xaml;
-using Xamarin.Prism.Services;
+using Xamarin.Prism.Data.Contracts.Services;
+using Xamarin.Prism.Data.Repositories;
+using Xamarin.Prism.Data.Services;
 using Xamarin.Prism.ViewModels;
 using Xamarin.Prism.Views;
 using TabA = Xamarin.Prism.Views.TabA;
@@ -24,10 +26,7 @@ namespace Xamarin.Prism
 
         protected override void RegisterTypes()
         {
-            // test here
-            Container.RegisterTypeForNavigation<DetailView>();
-            // end test
-
+            // views
             Container.RegisterTypeForNavigation<TabMainPage>();
             Container.RegisterTypeForNavigation<TabA, TabViewModel>();
             Container.RegisterTypeForNavigation<TabB, TabViewModel>();
@@ -41,10 +40,15 @@ namespace Xamarin.Prism
             Container.RegisterTypeForNavigation<ProfileView>();
             Container.RegisterTypeForNavigation<CameraView>();
             Container.RegisterTypeForNavigation<BarcodeScanView>();
+            Container.RegisterTypeForNavigation<CasesView>();
 
-            // singleton
+            // repositories
+            Container.RegisterType<CaseRepository>(new ContainerControlledLifetimeManager());
+
+            // services
             Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
             Container.RegisterType<IAuthenticationService, AuthenticationService>(new ContainerControlledLifetimeManager());
+            Container.RegisterType<IDataService, DataService>(new ContainerControlledLifetimeManager());
         }
     }
 }

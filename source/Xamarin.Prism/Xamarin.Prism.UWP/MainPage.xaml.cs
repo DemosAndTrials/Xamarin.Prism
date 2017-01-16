@@ -1,7 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
-using Xamarin.Prism.Services;
-using Xamarin.Prism.UWP.CustomViews;
+using Xamarin.Prism.Data.Services;
 
 namespace Xamarin.Prism.UWP
 {

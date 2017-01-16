@@ -132,6 +132,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Xamarin.Prism.Data.Contracts\Xamarin.Prism.Data.Contracts.csproj">
+      <Project>{90bccf96-915e-41a3-9087-f427d6a75b7f}</Project>
+      <Name>Xamarin.Prism.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xamarin.Prism.Data\Xamarin.Prism.Data.csproj">
+      <Project>{145f4730-9278-4a94-81cb-e860a157d06a}</Project>
+      <Name>Xamarin.Prism.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Xamarin.Prism\Xamarin.Prism.csproj">
       <Name>Xamarin.Prism</Name>
       <Project>{1A10BFD2-241E-479C-BFFD-1B0950C7E960}</Project>

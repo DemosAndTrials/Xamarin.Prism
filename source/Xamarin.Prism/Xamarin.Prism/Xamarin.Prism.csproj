@@ -37,13 +37,10 @@
   <ItemGroup>
     <Compile Include="ApplicationCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\AccountStoreFactory.cs" />
-    <Compile Include="Services\AuthenticationService.cs" />
-    <Compile Include="Services\Constants.cs" />
-    <Compile Include="Services\IAuthenticationService.cs" />
     <Compile Include="ViewModels\Abstract\ViewModelBase.cs" />
     <Compile Include="ViewModels\CameraViewModel.cs" />
     <Compile Include="ViewModels\BarcodeScanViewModel.cs" />
+    <Compile Include="ViewModels\CasesViewModel.cs" />
     <Compile Include="ViewModels\LoginPopupViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -56,6 +53,9 @@
     </Compile>
     <Compile Include="Views\BarcodeScanView.xaml.cs">
       <DependentUpon>BarcodeScanView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CasesView.xaml.cs">
+      <DependentUpon>CasesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginPopupView.xaml.cs">
       <DependentUpon>LoginPopupView.xaml</DependentUpon>
@@ -247,6 +247,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\BarcodeScanView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Xamarin.Prism.Data.Contracts\Xamarin.Prism.Data.Contracts.csproj">
+      <Project>{90bccf96-915e-41a3-9087-f427d6a75b7f}</Project>
+      <Name>Xamarin.Prism.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xamarin.Prism.Data\Xamarin.Prism.Data.csproj">
+      <Project>{145f4730-9278-4a94-81cb-e860a157d06a}</Project>
+      <Name>Xamarin.Prism.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xamarin.Prism.Model.Contracts\Xamarin.Prism.Model.Contracts.csproj">
+      <Project>{a8c42708-ea5e-4b17-b0f6-172e9c82c231}</Project>
+      <Name>Xamarin.Prism.Model.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xamarin.Prism.Model\Xamarin.Prism.Model.csproj">
+      <Project>{d92e3aef-5120-4dab-989a-6f6bef49a0e8}</Project>
+      <Name>Xamarin.Prism.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CasesView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

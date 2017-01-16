@@ -26,6 +26,7 @@
                 <Button Text="MenuItem4" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabB"/>
                 <Button Text="Profile" Command="{Binding NavigateCommand}" CommandParameter="DetailView/ProfileView"/>
                 <Button Text="Settings" Command="{Binding NavigateCommand}" CommandParameter="DetailView/TabC"/>
+                <Button Text="Cases" Command="{Binding NavigateCommand}" CommandParameter="DetailView/CasesView"/>
             </StackLayout>
         </ContentPage>
 

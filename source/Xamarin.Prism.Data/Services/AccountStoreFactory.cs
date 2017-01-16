@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Auth;
 
-namespace Xamarin.Prism.Services
+namespace Xamarin.Prism.Data.Services
 {
     public static class AccountStoreFactory
     {

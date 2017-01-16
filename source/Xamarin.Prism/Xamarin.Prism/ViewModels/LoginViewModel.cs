@@ -1,6 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
-using Xamarin.Prism.Services;
+using Xamarin.Prism.Data.Contracts.Services;
 using Xamarin.Prism.ViewModels.Abstract;
 
 namespace Xamarin.Prism.ViewModels

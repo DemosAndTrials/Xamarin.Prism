@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.UWP;
-using Xamarin.Prism.Services;
+using Xamarin.Prism.Data;
 using Xamarin.Prism.UWP.CustomViews;
 using Xamarin.Prism.ViewModels;
 using Xamarin.Prism.Views;

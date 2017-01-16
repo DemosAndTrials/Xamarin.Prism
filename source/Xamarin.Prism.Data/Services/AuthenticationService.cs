@@ -1,8 +1,9 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Auth;
+using Xamarin.Prism.Data.Contracts.Services;
 
-namespace Xamarin.Prism.Services
+namespace Xamarin.Prism.Data.Services
 {
     public class AuthenticationService : IAuthenticationService
     {

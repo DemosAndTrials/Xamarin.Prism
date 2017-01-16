@@ -5,7 +5,7 @@ using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using Xamarin.Prism.iOS.CustomViews;
-using Xamarin.Prism.Services;
+using Xamarin.Prism.Data;
 using Xamarin.Prism.ViewModels;
 using Xamarin.Prism.Views;
 

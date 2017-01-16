@@ -1,4 +1,4 @@
-﻿namespace Xamarin.Prism.Services
+﻿namespace Xamarin.Prism.Data
 {
     public static class Constants
     {

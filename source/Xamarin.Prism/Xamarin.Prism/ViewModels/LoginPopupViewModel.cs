@@ -1,7 +1,7 @@
 ﻿using Prism.Mvvm;
 using Prism.Navigation;
 using Xamarin.Auth;
-using Xamarin.Prism.Services;
+using Xamarin.Prism.Data.Contracts.Services;
 
 namespace Xamarin.Prism.ViewModels
 {
